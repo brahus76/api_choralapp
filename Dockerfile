@@ -23,4 +23,4 @@ RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 # Commande de démarrage
 # On demande à PHP de lancer la migration, puis de démarrer le serveur
 # Remplace la dernière ligne par celle-ci
-CMD php artisan serve --host=0.0.0.0 --port=8000
+CMD php artisan route:clear && php artisan config:clear && php artisan serve --host=0.0.0.0 --port=8000
