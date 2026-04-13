@@ -11,6 +11,8 @@
 /.phpunit.cache
 /.vscode
 /.zed
+app/
+routes/
 /auth.json
 /node_modules
 /public/build
@@ -18,6 +20,7 @@
 /public/storage
 /storage/*.key
 /storage/pail
+database/migrations/
 /vendor
 _ide_helper.php
 Homestead.json
