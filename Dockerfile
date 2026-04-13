@@ -21,4 +21,5 @@ RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 
 # Commande de démarrage
-CMD php artisan serve --host=0.0.0.0 --port=8000
+# On demande à PHP de lancer la migration, puis de démarrer le serveur
+CMD php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=8000
