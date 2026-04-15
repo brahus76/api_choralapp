@@ -12,7 +12,8 @@
         "laravel/sanctum": "^4.0",
         "laravel/telescope": "*",
         "laravel/tinker": "^3.0",
-        "ext-pdo_mysql": "*"
+        "ext-pdo_mysql": "*",
+        "ext-curl": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
